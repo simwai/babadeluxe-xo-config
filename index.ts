@@ -1,0 +1,98 @@
+import { type FlatXoConfig } from 'xo'
+
+const config: FlatXoConfig = [
+  {
+    ignores: [
+      '**/node_modules/**',
+      '**/dist/**',
+      '**/out/**',
+      '**/build/**',
+      '**/coverage/**',
+      '**/.vscode-test/**'
+    ]
+  },
+  {
+    prettier: true,
+    space: 2,
+    semicolon: false,
+    rules: {
+      'no-await-in-for-loop': 'off',
+      'arrow-body-style': 'off',
+      'prefer-arrow-callback': 'off',
+      'max-len': 'off',
+      'no-mixed-operators': 'off',
+      'quotes': 'off',
+      'semi': ['error', 'never'],
+      'space-before-function-paren': 'off',
+      'indent': 'off',
+      'object-curly-spacing': 'off',
+      'array-bracket-spacing': 'off',
+      'block-spacing': 'off',
+      'comma-dangle': 'off',
+      'comma-spacing': 'off',
+      'computed-property-spacing': 'off',
+      'func-call-spacing': 'off',
+      'key-spacing': 'off',
+      'keyword-spacing': 'off',
+      'no-multi-spaces': 'off',
+      'no-trailing-spaces': 'off',
+      'no-whitespace-before-property': 'off',
+      'padded-blocks': 'off',
+      'rest-spread-spacing': 'off',
+      'space-before-blocks': 'off',
+      'space-in-parens': 'off',
+      'space-infix-ops': 'off',
+      'template-curly-spacing': 'off',
+      'yield-star-spacing': 'off',
+
+      'strict': 'off',
+      'camelcase': 'off',
+      'no-new': 'off',
+      'no-return-assign': 'warn',
+      'no-useless-constructor': 'off',
+      'no-async-promise-executor': 'error',
+      'no-new-func': 'error',
+      'no-undef': 'off',
+      'no-inline-comments': 'off',
+
+      'unicorn/numeric-separators-style': 'off',
+      'unicorn/prefer-array-some': 'off',
+      'unicorn/prefer-module': 'off',
+      'unicorn/prefer-event-target': 'off',
+      'unicorn/filename-case': 'off',
+      'unicorn/no-empty-file': 'off',
+
+      'curly': ['error', 'multi-line'],
+      'eqeqeq': 'warn',
+      'no-throw-literal': 'warn',
+      'prefer-const': 'error',
+      'no-var': 'error',
+      'no-empty-function': 'warn',
+      'no-lonely-if': 'error',
+      'spaced-comment': ['error', 'always'],
+      'capitalized-comments': ['warn', 'always'],
+      'yoda': 'error',
+      'max-nested-callbacks': ['warn', { max: 7 }],
+      'max-statements-per-line': ['error', { max: 3 }],
+
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          argsIgnorePattern: '(_.*)',
+          varsIgnorePattern: '^_'
+        }
+      ],
+      '@typescript-eslint/ban-ts-comment': 'off',
+      '@typescript-eslint/ban-types': 'off',
+      '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
+      '@typescript-eslint/no-unsafe-argument': 'off',
+      '@typescript-eslint/prefer-promise-reject-errors': 'off',
+      '@typescript-eslint/prefer-nullish-coalescing': 'off',
+      '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+      '@typescript-eslint/prefer-optional-chain': 'error'
+    }
+  }
+]
+
+export default config
