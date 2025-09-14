@@ -1,0 +1,22 @@
+{
+  "extends": "@sindresorhus/tsconfig",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": ".",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "noEmit": false,
+    "erasableSyntaxOnly": false,
+    "declaration": true,
+    "declarationMap": true,
+    "strictNullChecks": true,
+    "composite": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "noErrorTruncation": true
+  },
+  "includes": [
+    "./**/*"
+  ]
+}

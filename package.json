@@ -2,9 +2,8 @@
   "name": "@babadeluxe/xo-config",
   "version": "0.1.2",
   "description": "Shared XO ESLint configuration with Prettier integration",
-  "main": "./dist/index.js",
-  "type": "module",
   "author": "simwai",
+  "type": "module",
   "keywords": [
     "eslint",
     "xo",
@@ -12,9 +11,8 @@
     "typescript",
     "prettier"
   ],
-  "files": [
-    "./dist/index.js"
-  ],
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "engines": {
     "node": ">=18"
   },
