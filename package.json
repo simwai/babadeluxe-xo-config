@@ -24,7 +24,7 @@
     "node": ">=18"
   },
   "scripts": {
-    "format": "xo --config index.ts --fix --prettier",
+    "format": "xo --config ./src/index.ts --fix --prettier",
     "build": "npx rimraf -g ./dist/**/* && tsc",
     "publish-patch": "npm version patch && npm publish",
     "publish-minor": "npm version minor && npm publish",
