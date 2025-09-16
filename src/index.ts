@@ -144,6 +144,20 @@ const config: FlatXoConfig = [
           format: ['camelCase'],
           leadingUnderscore: 'require',
         },
+        // Constructor parameter properties - private
+        {
+          selector: 'parameterProperty',
+          modifiers: ['private'],
+          format: ['camelCase'],
+          leadingUnderscore: 'require',
+        },
+        // Constructor parameter properties - protected
+        {
+          selector: 'parameterProperty',
+          modifiers: ['protected'],
+          format: ['camelCase'],
+          leadingUnderscore: 'require',
+        },
         {
           selector: 'import',
           format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
