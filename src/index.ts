@@ -92,7 +92,7 @@ const config: FlatXoConfig = [
         },
         {
           selector: 'variable',
-          format: ['camelCase', 'UPPER_CASE'],
+          format: ['camelCase'],
           leadingUnderscore: 'allow',
         },
         {
@@ -164,19 +164,19 @@ const config: FlatXoConfig = [
         {
           selector: 'classProperty',
           modifiers: ['private', 'static', 'readonly'],
-          format: ['camelCase', 'UPPER_CASE'],
+          format: ['camelCase'],
           leadingUnderscore: 'require',
         },
         {
           selector: 'classProperty',
           modifiers: ['protected', 'static', 'readonly'],
-          format: ['camelCase', 'UPPER_CASE'],
+          format: ['camelCase'],
           leadingUnderscore: 'require',
         },
         {
           selector: 'classProperty',
           modifiers: ['public', 'static', 'readonly'],
-          format: ['camelCase', 'UPPER_CASE'],
+          format: ['camelCase'],
         },
 
         // Two modifier combinations
@@ -200,19 +200,19 @@ const config: FlatXoConfig = [
         {
           selector: 'classProperty',
           modifiers: ['private', 'static'],
-          format: ['camelCase', 'UPPER_CASE'],
+          format: ['camelCase'],
           leadingUnderscore: 'require',
         },
         {
           selector: 'classProperty',
           modifiers: ['protected', 'static'],
-          format: ['camelCase', 'UPPER_CASE'],
+          format: ['camelCase'],
           leadingUnderscore: 'require',
         },
         {
           selector: 'classProperty',
           modifiers: ['public', 'static'],
-          format: ['camelCase', 'UPPER_CASE'],
+          format: ['camelCase'],
         },
 
         // Single modifier properties
@@ -231,12 +231,12 @@ const config: FlatXoConfig = [
         {
           selector: 'classProperty',
           modifiers: ['public'],
-          format: ['camelCase', 'UPPER_CASE'],
+          format: ['camelCase'],
         },
         {
           selector: 'classProperty',
           modifiers: ['static'],
-          format: ['camelCase', 'UPPER_CASE'],
+          format: ['camelCase'],
         },
         {
           selector: 'classProperty',
@@ -245,7 +245,7 @@ const config: FlatXoConfig = [
         },
         {
           selector: 'classProperty',
-          format: ['camelCase', 'UPPER_CASE'],
+          format: ['camelCase'],
         },
 
         // Method combinations
@@ -360,7 +360,7 @@ const config: FlatXoConfig = [
 
         {
           selector: 'import',
-          format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
+          format: ['camelCase', 'PascalCase'],
         },
 
         // Quoted members (keep at end)
