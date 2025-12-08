@@ -1,6 +1,4 @@
 import { type FlatXoConfig } from 'xo'
-// @ts-expect-error - no type definitions available
-import noExplicitUndefined from 'eslint-plugin-no-explicit-undefined'
 
 const config: FlatXoConfig = [
   {
@@ -19,12 +17,7 @@ const config: FlatXoConfig = [
     prettier: true,
     space: 2,
     semicolon: false,
-    plugins: {
-      // eslint-disable-next-line
-      'no-undefined-type-declaration': noExplicitUndefined,
-    },
     rules: {
-      'no-undefined-type-declaration/no-undefined-type': 'error',
       'capitalized-comments': 'off',
       'no-await-in-for-loop': 'off',
       'arrow-body-style': 'off',
@@ -438,12 +431,7 @@ const config: FlatXoConfig = [
     prettier: true,
     space: 2,
     semicolon: false,
-    plugins: {
-      // eslint-disable-next-line
-      'no-undefined-type-declaration': noExplicitUndefined,
-    },
     rules: {
-      'no-undefined-type-declaration/no-undefined-type': 'error',
       'capitalized-comments': 'off',
       'no-await-in-for-loop': 'off',
       'arrow-body-style': 'off',
