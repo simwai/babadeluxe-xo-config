@@ -8,6 +8,7 @@
     "search.exclude": {
         "**/dist/**": true
     },
+    "files.trimTrailingWhitespace": true,
     "editor.formatOnSaveMode": "file",
     "typescript.suggest.paths": true,
     "javascript.suggest.paths": true,
