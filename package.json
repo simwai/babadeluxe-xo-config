@@ -64,5 +64,8 @@
   },
   "publishConfig": {
     "registry": "https://npflared.simonwaiblinger.workers.dev"
+  },
+  "dependencies": {
+    "tsx": "^4.21.0"
   }
 }
