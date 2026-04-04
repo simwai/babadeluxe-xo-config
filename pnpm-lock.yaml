@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@types/dotenv':
+        specifier: ^8.2.3
+        version: 8.2.3
+      dotenv:
+        specifier: ^17.4.0
+        version: 17.4.0
       tsx:
         specifier: ^4.21.0
         version: 4.21.0
@@ -27,9 +33,6 @@ importers:
       baseline-browser-mapping:
         specifier: ^2.8.32
         version: 2.10.9
-      globby:
-        specifier: ^16.1.1
-        version: 16.1.1
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -763,6 +766,10 @@ packages:
   '@tybys/wasm-util@0.10.1':
     resolution: {integrity: sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg==}
 
+  '@types/dotenv@8.2.3':
+    resolution: {integrity: sha512-g2FXjlDX/cYuc5CiQvyU/6kkbP1JtmGzh0obW50zD7OKeILVL0NSpPWLXVfqoAGQjom2/SLLx9zHq0KXvD6mbw==}
+    deprecated: This is a stub types definition. dotenv provides its own type definitions, so you do not need this installed.
+
   '@types/eslint@8.56.12':
     resolution: {integrity: sha512-03ruubjWyOHlmljCVoxSuNDdmfZDzsrrz0P2LeJsOXr+ZwFQ+0yQIwNCwt/GYhV7Z31fgtXJTAEs+FYlEL851g==}
 
@@ -1274,6 +1281,10 @@ packages:
   domutils@3.2.2:
     resolution: {integrity: sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==}
 
+  dotenv@17.4.0:
+    resolution: {integrity: sha512-kCKF62fwtzwYm0IGBNjRUjtJgMfGapII+FslMHIjMR5KTnwEmBmWLDRSnc3XSNP8bNy34tekgQyDT0hr7pERRQ==}
+    engines: {node: '>=12'}
+
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
@@ -1718,10 +1729,6 @@ packages:
     resolution: {integrity: sha512-0Ia46fDOaT7k4og1PDW4YbodWWr3scS2vAr2lTbsplOt2WkKp0vQbkI9wKis/T5LV/dqPjO3bpS/z6GTJB82LA==}
     engines: {node: '>=18'}
 
-  globby@16.1.1:
-    resolution: {integrity: sha512-dW7vl+yiAJSp6aCekaVnVJxurRv7DCOLyXqEG3RYMYUg7AuJ2jCqPkZTA8ooqC2vtnkaMcV5WfFBMuEnTu1OQg==}
-    engines: {node: '>=20'}
-
   globrex@0.1.2:
     resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
 
@@ -1905,10 +1912,6 @@ packages:
   is-obj-prop@2.0.0:
     resolution: {integrity: sha512-2/VFrbzXSZVJIscazpxoB+pOQx2jBOAAL9Gui4cRKxflznUNBpsr8IDvBA4UGol3e40sltLNiY3qnZv/7qSUxA==}
     engines: {node: '>=18.0.0'}
-
-  is-path-inside@4.0.0:
-    resolution: {integrity: sha512-lJJV/5dYS+RcL8uQdBDW9c9uWFLLBNRyFhnAKXw5tVqLlKZ4RMGZKv+YQ/IA3OhD+RpbJa1LLFM1FQPGyIXvOA==}
-    engines: {node: '>=12'}
 
   is-plain-obj@4.1.0:
     resolution: {integrity: sha512-+Pgi+vMuUNkJyExiMBt5IlFoMyKnr5zhJ4Uspz58WOhBF5QoIZkFyNHIbBAtHwzVAgk5RtndVNsDRN61/mmDqg==}
@@ -2839,10 +2842,6 @@ packages:
     resolution: {integrity: sha512-+QBBXBCvifc56fsbuxZQ6Sic3wqqc3WWaqxs58gvJrcOuN83HGTCwz3oS5phzU9LthRNE9VrJCFCLUgHeeFnfA==}
     engines: {node: '>=18'}
 
-  unicorn-magic@0.4.0:
-    resolution: {integrity: sha512-wH590V9VNgYH9g3lH9wWjTrUoKsjLF6sGLjhR4sH1LWpLmCOH0Zf7PukhDA8BiS7KHe4oPNkcTHqYkj7SOGUOw==}
-    engines: {node: '>=20'}
-
   unrs-resolver@1.11.1:
     resolution: {integrity: sha512-bSjt9pjaEBnNiGgc9rUiHGKv5l4/TGzDmYw3RhnkJGtLhbnnA/5qJj7x3dNDCRx/PJxu774LlH8lCOlB4hEfKg==}
 
@@ -3456,6 +3455,10 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
+  '@types/dotenv@8.2.3':
+    dependencies:
+      dotenv: 17.4.0
+
   '@types/eslint@8.56.12':
     dependencies:
       '@types/estree': 1.0.8
@@ -3995,6 +3998,8 @@ snapshots:
       dom-serializer: 2.0.0
       domelementtype: 2.3.0
       domhandler: 5.0.3
+
+  dotenv@17.4.0: {}
 
   dunder-proto@1.0.1:
     dependencies:
@@ -4661,15 +4666,6 @@ snapshots:
       slash: 5.1.0
       unicorn-magic: 0.3.0
 
-  globby@16.1.1:
-    dependencies:
-      '@sindresorhus/merge-streams': 4.0.0
-      fast-glob: 3.3.3
-      ignore: 7.0.5
-      is-path-inside: 4.0.0
-      slash: 5.1.0
-      unicorn-magic: 0.4.0
-
   globrex@0.1.2: {}
 
   gopd@1.2.0: {}
@@ -4830,8 +4826,6 @@ snapshots:
     dependencies:
       lowercase-keys: 3.0.0
       obj-props: 2.0.0
-
-  is-path-inside@4.0.0: {}
 
   is-plain-obj@4.1.0: {}
 
@@ -5795,8 +5789,6 @@ snapshots:
   undici-types@7.18.2: {}
 
   unicorn-magic@0.3.0: {}
-
-  unicorn-magic@0.4.0: {}
 
   unrs-resolver@1.11.1:
     dependencies:

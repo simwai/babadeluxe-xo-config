@@ -21,8 +21,7 @@
     }
   },
   "files": [
-    "dist",
-    "LICENSE"
+    "dist"
   ],
   "keywords": [
     "eslint",
@@ -37,10 +36,10 @@
   "scripts": {
     "format": "xo . --config ./xo.config.ts --prettier --fix",
     "build": "unbuild",
-    "test-package": "npm pack --dry-run",
-    "publish-patch": "tsx --env-file=./.env ./publish.ts patch",
-    "publish-minor": "tsx --env-file=./.env ./publish.ts minor",
-    "publish-major": "tsx --env-file=./.env ./publish.ts major",
+    "test-package": "pnpm build && npm pack --dry-run",
+    "publish-patch": "tsx ./publish.ts patch",
+    "publish-minor": "tsx ./publish.ts minor",
+    "publish-major": "tsx ./publish.ts major",
     "prepare": "husky"
   },
   "peerDependencies": {
@@ -54,7 +53,6 @@
     "@typescript-eslint/eslint-plugin": "^8.43.0",
     "@typescript-eslint/parser": "^8.43.0",
     "baseline-browser-mapping": "^2.8.32",
-    "globby": "^16.1.1",
     "husky": "^9.1.7",
     "typescript": "^5.9.2",
     "unbuild": "^2.0.0",
@@ -64,6 +62,8 @@
     "registry": "https://npflared.simonwaiblinger.workers.dev"
   },
   "dependencies": {
+    "@types/dotenv": "^8.2.3",
+    "dotenv": "^17.4.0",
     "tsx": "^4.21.0"
   }
 }
