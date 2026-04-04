@@ -3,11 +3,9 @@
 # @babadeluxe/xo-config
 
 <p align="left">
-  <img src="https://img.shields.io/npm/v/@babadeluxe/xo-config?color=4568dc&style=flat-square" alt="npm version">
-  <img src="https://img.shields.io/badge/license-MIT-6a5acd?style=flat-square" alt="license">
-  <img src="https://img.shields.io/badge/code_style-XO-8a2be2?style=flat-square" alt="code style: xo">
-  <img src="https://img.shields.io/badge/formatter-prettier-9932cc?style=flat-square" alt="formatter: prettier">
-  <img src="https://img.shields.io/badge/node-%3E%3D18-b06ab3?style=flat-square" alt="node version">
+  <img src="https://img.shields.io/badge/license-MIT-6a5acd?style=flat-rounded" alt="license">
+  <img src="https://img.shields.io/badge/code_style-XO-8a2be2?style=flat-rounded" alt="code style: xo">
+  <img src="https://img.shields.io/badge/node-%3E%3D18-b06ab3?style=flat-rounded" alt="node version">
 </p>
 
 ## Overview
