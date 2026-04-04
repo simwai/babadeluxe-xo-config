@@ -64,7 +64,6 @@
     "registry": "https://npflared.simonwaiblinger.workers.dev"
   },
   "dependencies": {
-    "dotenv": "^17.4.0",
     "tsx": "^4.21.0"
   }
 }

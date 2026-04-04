@@ -1,8 +1,5 @@
 import { execSync } from 'node:child_process'
 import process from 'node:process'
-// @ts-expect-error no declaration file
-// eslint-disable-next-line import-x/no-unassigned-import
-import 'dotenv/config'
 
 const bump = process.argv[2] ?? 'patch'
 
