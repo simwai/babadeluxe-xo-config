@@ -6,7 +6,6 @@
     "sourceMap": true,
     "experimentalDecorators": true,
     "erasableSyntaxOnly": false,
-    "declarationMap": true,
     "strict": true,
     "incremental": true,
     "isolatedModules": true,

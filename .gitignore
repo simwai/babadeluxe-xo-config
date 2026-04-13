@@ -21,3 +21,4 @@ logs/
 *.tsbuildinfo
 *.old
 .env.local
+.npmrc

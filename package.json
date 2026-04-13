@@ -34,6 +34,8 @@
     "node": ">=18"
   },
   "scripts": {
+    "pnpm:devPreinstall": "pnpx tsx ./setup-npmrc.ts",
+    "prepack": "pnpx tsx ./setup-npmrc.ts",
     "format": "xo . --config ./xo.config.ts --prettier --fix",
     "build": "unbuild",
     "test-package": "pnpm build && pnpm pack --dry-run",
@@ -58,12 +60,12 @@
     "unbuild": "^2.0.0",
     "xo": "^1.2.2"
   },
-  "publishConfig": {
-    "registry": "https://npflared.simonwaiblinger.workers.dev"
-  },
   "dependencies": {
     "@types/dotenv": "^8.2.3",
     "dotenv": "^17.4.0",
     "tsx": "^4.21.0"
+  },
+  "publishConfig": {
+    "registry": "https://npflared.simonwaiblinger.workers.dev"
   }
 }

@@ -1,5 +1,5 @@
 {
-    "typescript.tsc.autoDetect": "off",
+    "js/ts.tsc.autoDetect": "off",
     "editor.formatOnSave": true,
     "editor.formatOnType": false,
     "files.exclude": {
@@ -10,13 +10,12 @@
     },
     "files.trimTrailingWhitespace": true,
     "editor.formatOnSaveMode": "file",
-    "typescript.suggest.paths": true,
-    "javascript.suggest.paths": true,
+    "js/ts.suggest.paths": true,
     "terminal.integrated.detectLocale": "on",
     "files.encoding": "utf8",
     "files.eol": "\n",
     "search.quickOpen.includeHistory": false,
-    "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+    "js/ts.tsserver.experimental.enableProjectDiagnostics": false,
     "xo.format.enable": true,
     "editor.codeActionsOnSave": {
         "source.fixAll": "explicit",
