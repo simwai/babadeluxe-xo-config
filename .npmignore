@@ -8,12 +8,22 @@ tsconfig.json
 example.npmrc
 test-package.sh
 xo[.-]config.ts
+publish.ts
+setup-npmrc.ts
+build.config.ts
 
 .env.local
 .gitattributes
 .gitignore
 .prettierrc
+.editorconfig
+.gitattributes
+.gitmodules
+.gitignore
 
+*.old
+*.txt
+*.py
 *.log
 *.svg
-*.md
+

@@ -21,4 +21,10 @@ logs/
 *.tsbuildinfo
 *.old
 .env.local
+
 .npmrc
+
+# AI
+*.txt
+*.py
+

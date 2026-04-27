@@ -4,6 +4,13 @@
     "outDir": "./dist",
     "sourceRoot": ".",
     "sourceMap": true,
+    "lib": [
+      "DOM",
+      "ES2023"
+    ],
+    "target": "es2023",
+    "moduleResolution": "nodenext",
+    "module": "nodenext",
     "experimentalDecorators": true,
     "erasableSyntaxOnly": false,
     "strict": true,
@@ -17,5 +24,8 @@
   },
   "include": [
     "*.ts"
+  ],
+  "exclude": [
+    "agent-resources"
   ]
 }
